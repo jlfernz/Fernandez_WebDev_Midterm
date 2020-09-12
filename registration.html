@@ -1,85 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=">
-  <title>Registration Form</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Registration Form</title>
+  </head>
+  <body>
+      <legend>Registration Form</legend>
+    
+        <table>
+          
+          <tr>
+            <td>Name</td>
+            <td><input type="text" 
+                       id="fname" 
+                       name="fname"
+                       placeholder="First name"
+                       />
+            </td>
+            <td><input type="text" 
+                       id="lname" 
+                       name="lname"
+                       placeholder="Last name"
+                       />
+            </td>
+          </tr>
 
-      <legend>Login Form</legend>
-      <table>
-        <tr>
-          <td>Name</td>
-          <td><input type="text" 
-                     id="txtName" 
-                     name="txtName"
-                     placeholder="Enter username here"
-                     />
-          </td>
-        </tr>
-        <tr>
-          <td>Password</td>
-          <td><input type="password" id="txtPassword" name="txtPassword" /></td>
-        </tr>
-        
-        <tr>
-          <td>Login as</td>
-          <td>
-            <input type="radio" 
-                   id="loginType" 
-                   name="loginType"
-                   value = "Guest"
-                   selected="selected"/>
-            <label for="loginType">Guest</label>
-            
-            <input type="radio"
-                   id="loginType"
-                   name="loginType"
-                   value="Admin"/>
-            <label for="loginType">Admin</label>            
-          </td>
-        </tr>
-        
-        <tr>
-          <td colspan="2">
-            Login as
-            <select name="drpLoginType" id="drpLoginType">
-              <option value="Guest">Guest</option>
-              <option value="Admin">Admin</option>
-              <option value="SuperUser">Super &nbsp;&nbsp;&nbsp;&nbsp; User</option>
-              <option value="Business Owner">Business Owner</option>
-            </select>
-            
-          </td>
-        </tr>
-        
-        <tr>
-          <td colspan="2">
-            <input type="checkbox" 
-                   id="cbxPolicy1"
-                   name="cbxPolicy1"
-                   value="I accept lorem ipsum"/>
-            <label for="cbxPolicy1">I accept lorem ipsum</label>
-          </td>
-        </tr>
-        
-        <tr>
-          <td colspan="2">
-            <input type="checkbox" 
-                   id="cbxPolicy2"
-                   name="cbxPolicy2"
-                   value="I accept lorem ipsum 2"/>
-            <label for="cbxPolicy2">I accept lorem ipsum 2</label>
-          </td>
-        </tr>        
-        
-        <tr>
-          <td colspan="2" align="right">
-            <button id="btnLogin" onClick="alert(document.getElementById('txtName').value)">Login</button>
-          </td>
-        </tr>
+          <tr>
+            <td>Email Adress</td>
+            <td><input type="text" 
+                       id="email" 
+                       name="email"
+                       placeholder="jdoe@uic.edu.ph"
+                       />
+            </td>
+          </tr>
+          
+          <tr>
+            <td>Password</td>
+            <td><input type="password" id="txtPassword" name="txtPassword" /></td>
+          </tr>
+
+          <tr>
+            <td>Confirm Password</td>
+            <td><input type="password" id="txtPassword" name="txtPassword" /></td>
+          </tr>
+
+          <tr>
+            <td>Gender</td>
+            <td>
+              <input type="radio" 
+                     id="gender" 
+                     name="gender"
+                     value = "Make"
+                     selected="selected"/>
+              <label for="gender">Male</label>
+
+              <input type="radio"
+                     id="gender"
+                     name="gender"
+                     value="Female"/>
+              <label for="gender">Female</label>            
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              Register as
+              <select name="drpType" id="drpType">
+                <option value="Guest">Guest</option>
+                <option value="Admin">Admin</option>
+                <option value="SuperUser">Super User</option>
+                <option value="BusinessOwner">Business Owner</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input type="checkbox" 
+                     id="cbxPolicy1"
+                     name="cbxPolicy1"
+                     value="I have read the terms and policy"/>
+              <label for="cbxPolicy1">I have read the terms and policy</label>
+            </td>
+          </tr>   
+
+          <tr colspan="2">
+            <td>Attach you 2x2 photo</td>
+            <td><input type="file"/></td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input type="checkbox" 
+                     id="cbxPolicy2"
+                     name="cbxPolicy2"
+                     value="I agree with the terms and policy"/>
+              <label for="cbxPolicy2">I agree with the terms and policy</label>
+            </td>
+          </tr>        
+
+          <tr colspan="2">
+            <td>
+              <button id="btnReset">Reset</button>
+              <input type="reset"/>
+            </td>
+            <td align="right">
+              <button id="btnRegister" onClick="alert(document.getElementById('txtName').value)">Register Now</button>
+            </td>
+          </tr>
+          
       </table>
   
-</body>
+  </body>
 </html>
