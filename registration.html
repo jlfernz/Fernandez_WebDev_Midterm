@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=">
     <title>Registration Form</title>
   </head>
+    <h3>Registration Form</h3>
   <body>
-      <legend>Registration Form</legend>
     
         <table>
           
           <tr>
             <td>Name</td>
-            <td><input type="text" 
+            <td>
+                <input type="text" 
                        id="fname" 
                        name="fname"
                        placeholder="First name"
                        />
-            </td>
-            <td><input type="text" 
+                <input type="text" 
                        id="lname" 
                        name="lname"
                        placeholder="Last name"
@@ -26,41 +26,43 @@
             </td>
           </tr>
 
-          <tr>
+          <tr colspan ="2">
             <td>Email Adress</td>
-            <td><input type="text" 
-                       id="email" 
-                       name="email"
-                       placeholder="jdoe@uic.edu.ph"
-                       />
+            <td>
+              <input type="text" id="email" name="email" placeholder="jdoe@uic.edu.ph"/>
             </td>
           </tr>
           
-          <tr>
+          <tr colspan="2">
             <td>Password</td>
-            <td><input type="password" id="txtPassword" name="txtPassword" /></td>
+            <td><input type="password" id="enPassword" name="enPassword" /></td>
           </tr>
 
-          <tr>
+          <tr colspan="2">
             <td>Confirm Password</td>
-            <td><input type="password" id="txtPassword" name="txtPassword" /></td>
+            <td><input type="password" id="conPassword" name="conPassword" /></td>
           </tr>
 
-          <tr>
+          <tr colspan = "2">
+            <td>Contact Number</td>
+            <td><input type="text" name="country code" placeholder="Country Code"  value="+639"/></td>  
+          </tr>
+          
+          <tr colspan="2">
             <td>Gender</td>
             <td>
               <input type="radio" 
-                     id="gender" 
-                     name="gender"
+                     id="mgender" 
+                     name="mgender"
                      value = "Make"
                      selected="selected"/>
-              <label for="gender">Male</label>
+              <label for="mgender">Male</label>
 
               <input type="radio"
-                     id="gender"
-                     name="gender"
+                     id="fgender"
+                     name="fgender"
                      value="Female"/>
-              <label for="gender">Female</label>            
+              <label for="fgender">Female</label>            
             </td>
           </tr>
 
@@ -68,10 +70,10 @@
             <td colspan="2">
               Register as
               <select name="drpType" id="drpType">
-                <option value="Guest">Guest</option>
+                <option value="Student">Student</option>
+                <option value="Faculty">Faculty</option>
+                <option value="Staff">Staff</option>
                 <option value="Admin">Admin</option>
-                <option value="SuperUser">Super User</option>
-                <option value="BusinessOwner">Business Owner</option>
               </select>
             </td>
           </tr>
@@ -81,14 +83,9 @@
               <input type="checkbox" 
                      id="cbxPolicy1"
                      name="cbxPolicy1"
-                     value="I have read the terms and policy"/>
-              <label for="cbxPolicy1">I have read the terms and policy</label>
+                     value="I have read the university privacy policy"/>
+              <label for="cbxPolicy1">I have read the university pricvacy policy</label>
             </td>
-          </tr>   
-
-          <tr colspan="2">
-            <td>Attach you 2x2 photo</td>
-            <td><input type="file"/></td>
           </tr>
 
           <tr>
@@ -96,18 +93,22 @@
               <input type="checkbox" 
                      id="cbxPolicy2"
                      name="cbxPolicy2"
-                     value="I agree with the terms and policy"/>
-              <label for="cbxPolicy2">I agree with the terms and policy</label>
+                     value="I agree with the university privacy policy"/>
+              <label for="cbxPolicy2">I agree with the university privacy policy</label>
             </td>
-          </tr>        
-
+          </tr>  
+          
           <tr colspan="2">
+            <td>Attach your 2x2 photo</td>
+            <td align="right"><input type="file"/></td>
+          </tr>
+
+          <tr colspan="2" align="center">
             <td>
-              <button id="btnReset">Reset</button>
-              <input type="reset"/>
+              <button type="reset" value="Reset">Reset</button>
             </td>
-            <td align="right">
-              <button id="btnRegister" onClick="alert(document.getElementById('txtName').value)">Register Now</button>
+            <td>
+              <button type="submit" value="Submit">Submit</button>
             </td>
           </tr>
           
