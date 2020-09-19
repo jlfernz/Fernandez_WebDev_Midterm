@@ -5,3 +5,5 @@
       left: 10px;
       z-index: 1;
     }
+table {border: 5px}
+tbody {text-align: center;}
