@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <style>
-      body {
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Detail</title>
+  <style>
+    body {
         margin: 0;
-        height: 100%;
+        min-height: 100%;
       }
 
       ul {
@@ -14,7 +17,7 @@
         width: 15%;
         background-color: #ffffff;
         position: fixed;
-        height: 50%;
+        height: 100%;
         overflow: auto;
       }
 
@@ -36,30 +39,29 @@
         background-color: #808080;
         color: white;
       }
-      </style>
-    </head>
-    <body>
-    <form action="">
-
-      <ul>
-        
-        <div class="cont">
-            <div class="c-3 m">
-                 <div class="m-item tit"><h2>Activities</h2></div>
+  </style>
+</head>
+<body>
+  <form action="">
+    <ul>
+      
+      <div class="cont">
+          <div class="c-3 m">
+              <div class="m-item tit"><h2>Activities</h2></div>
               <div class="m-item"><li><a href="poem.html" target="iname">Poem Page</a></li></div>
-                <div class="m-item"><li><a href="markup.html" target="iname">Markup Page</a></li></div>
-                <div class="m-item"><li><a href="wishlist.html" target="iname">Wishlist Page</a></li></div>
-                <div class="m-item"><li><a href="calendar.html" target="iname">Calendar Page</a></li></div>
-                <div class="m-item"><li><a href="registration.html" target="iname">Registration Page</a></li></div>
-            </div>
-       </ul>
+              <div class="m-item"><li><a href="markup.html" target="iname">Markup Page</a></li></div>
+              <div class="m-item"><li><a href="wishlist.html" target="iname">Wishlist Page</a></li></div>
+              <div class="m-item"><li><a href="calendar.html" target="iname">Calendar Page</a></li></div>
+              <div class="m-item"><li><a href="registration.html" target="iname">Registration Page</a></li></div>
+          </div>
+    </ul>
 
-        <div style="margin-left:5%;padding:1px 200px; height:100%;">
-            <div class="c-9 det">
-              <iframe src="poem.html" name="iname" frameborder="" height="100%" width="100%"></iframe>
-            </div>
-        </div>
+      <div style="margin-left:5%;padding:1px 200px; height:100%;">
+          <div class="c-9 det">
+            <iframe src="poem.html" name="iname" height="100%" width="100%"></iframe>
+          </div>
+      </div>
 
-    </form>
-    </body>
+  </form>
+</body>
 </html>
